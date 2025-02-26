@@ -1,0 +1,252 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+.fade {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 3s;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff7aff;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+#home img.latest {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#home a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#home a:hover {
+    background-color: #e6f0ff;
+    color: #007BFF;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#home a:active {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+#collumn {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+#icon svg {
+    fill: #007BFF;
+}
+
+#about h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#about p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#single {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+#single img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#single figure {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#single figure:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#single figure:active {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#single h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#section-span {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#social-media li {
+    margin: 10px;
+}
+
+#social-media a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#social-media a:hover {
+    text-decoration: underline;
+}
+
+#icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #collumn {
+        margin: 20px 0;
+    }
+}
